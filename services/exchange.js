@@ -15,7 +15,6 @@ async function getExchangeRates(baseCurrency) {
   try {
     res = await fetch(url);
   } catch (e) {
-    // если проблема сеть/SSL/доступ
     throw new Error(`ExchangeRate fetch failed: ${e.message}`);
   }
 
